@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 1.5rem;
   }
 
   h2 {
