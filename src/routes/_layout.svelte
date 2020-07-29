@@ -1,5 +1,6 @@
 <script>
   import Header from '../components/Header.svelte';
+  import Footer from '../components/Footer.svelte';
 
   export let segment;
 </script>
@@ -28,6 +29,10 @@
     background-color: #272343;
   }
 
+  .bg-gradient {
+    background-image: linear-gradient(#272343, #bae8e8);
+  }
+
   @media (min-width: 768px) {
     main {
       padding: 0 1.25rem;
@@ -43,6 +48,8 @@
 
 <Header {segment} />
 
-<main>
+<main class:bg-gradient={segment === 'iniciar-sesion' || segment === 'registro'}>
   <slot />
 </main>
+
+<Footer {segment} />

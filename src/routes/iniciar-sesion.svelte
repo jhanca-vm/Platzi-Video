@@ -1,7 +1,9 @@
+<script>
+  import SignIn from '../components/SignIn.svelte';
+</script>
+
 <svelte:head>
-	<title>About</title>
+  <title>Platzi Video | Iniciar Sesión</title>
 </svelte:head>
 
-<h1>About this site</h1>
-
-<p>This is the 'about' page. There's not much here.</p>
+<SignIn />
